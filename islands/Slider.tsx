@@ -37,19 +37,19 @@ export default function Slider(props: Props){
             <div className={`flex justify-center lg:grid lg:grid-cols-3 gap-8`}>
                 {images ?
                         <a href={images[index].link}>
-                            <Image src={images[index].image} width={400} className={`rounded-3xl lg:w-full`}/>
+                            <Image src={images[index].image} width={200} className={`rounded-3xl lg:w-full`}/>
                         </a>
                     : ``
                 }
                 {images ?
                         <a href={images[index + 1 >= images.length ? (index + 1) - images.length : index + 1].link}>
-                            <Image src={images[index + 1 >= images.length ? (index + 1) - images.length : index + 1].image} width={400} className={`rounded-3xl lg:w-full hidden  lg:block`}/>
+                            <Image src={images[index + 1 >= images.length ? (index + 1) - images.length : index + 1].image} width={200} className={`rounded-3xl lg:w-full hidden  lg:block`}/>
                         </a>
                     : ``
                 }
                 {images ?
                         <a href={images[index + 2 >= images.length ? (index + 2) - images.length : index + 2].link}>
-                            <Image src={images[index + 2 >= images.length ? (index + 2) - images.length : index + 2].image} width={400} className={`rounded-3xl lg:w-full hidden  lg:block`}/>
+                            <Image src={images[index + 2 >= images.length ? (index + 2) - images.length : index + 2].image} width={200} className={`rounded-3xl lg:w-full hidden  lg:block`}/>
                         </a>
                     : ``
                 }

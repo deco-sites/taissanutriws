@@ -10,8 +10,6 @@ export interface MenuItem{
     /**@description Torna o texto rosa*/
 }
 
-
-
 interface Props{
     headerImage?: LiveImage;
     burgerMenuImage: LiveImage;
