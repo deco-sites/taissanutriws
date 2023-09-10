@@ -12,36 +12,33 @@ interface CardInfo {
 interface Props{
     title: string,
     image: LiveImage,
+    mainText: string,
     cards: CardInfo[],
     imageAlt?: string
 }
 
 export default function AreaDeAtuacao(props:Props){
-    const {title, image, imageAlt, cards} = props;
-    const [showMore, setMore] = useState<boolean>(false);
-
+    const {title, image, imageAlt, cards, mainText} = props;
     return(
-        <section className={`mt-[150px]`}>
-             <h1>{title}</h1>
-             <Image src={image} width={250} alt={imageAlt}/>
-             <div className={`grid grid-cols-1 p-6 md:grid-cols-3 lg:grid-cols-4`}>
+        <section className={`mt-[150px] px-4 lg:px-20`}>
+             <h1 className={`font-[inter] font-bold text-[40px] text-center lg:text-left lg:text-6xl lg:mb-8`}>{title}</h1>
+             <Image src={image} width={250} alt={imageAlt} className={`w-full rounded-3xl mb-6`}/>
+             <p className={`text-[#3B3C4A] text-base mb-12 lg:text-2xl leading-10`}>{mainText}</p>
+             <div className={`grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 mb-7 lg:mb-24`}>
                 {
-                    cards?.filter((item, index)=>{
-                        if(showMore) return item;
-                        if(index < 14) return item;
-                    }).map(item=>{
+                    cards.map(item=>{
                         return(
-                            <div className={`rounded-xl border-[#e8e8ea] border-1 `}>
-                                 <Image src={item.image} width={300} alt={`cardInfo`}  className={`w-full rounded-t-xl`}/>
-                                 <div className={`px-2 gap-4 flex flex-col py-6`}>
+                            <div className={`rounded-xl border-[#e8e8ea] border-1 mb-12`}>
+                                    <Image src={item.image} width={300} alt={`cardInfo`}  className={`w-full rounded-t-xl`}/>
+                                    <div className={`px-2 gap-4 flex flex-col py-6`}>
                                     <p className={`text-[#EC926A] px-2 py-1 flex items-center justify-center bg-[#f7e3da] rounded-lg w-[fit-content] text-xs`}>{item.tag}</p>
                                     <p className={`text-[#181A2A] text-xl font-semibold leading-normal`}>{item.title}</p>
                                     <p className={`text-[#97989F] text-xs font-normal leading-tight`}>{item.text}</p>
-                                 </div>
+                                    </div>
                             </div>
                         )
                     })
-                }
+                } 
              </div>
         </section>
     )

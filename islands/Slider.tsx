@@ -34,10 +34,10 @@ export default function Slider(props: Props){
                     <div className={`cursor-pointer`} onClick={()=>{moveImages(1)}}><img src={asset("/RightArrow.svg")} width={32}/></div>
                 </div>
             </div>
-            <div className={`flex justify-center lg:grid lg:grid-cols-3 gap-8`}>
+            <div className={`grid grid-cols-1 lg:grid-cols-3 gap-8`}>
                 {images ?
                         <a href={images[index].link}>
-                            <Image src={images[index].image} width={200} className={`rounded-3xl lg:w-full`}/>
+                            <Image src={images[index].image} width={200} className={`rounded-3xl w-full lg:w-full`}/>
                         </a>
                     : ``
                 }

@@ -42,7 +42,7 @@ export default function Footer(props: Props){
                   <a href="/" className={`text-lg font-medium leading-[30px]`}>Perguntas ou feedbacks?</a>
                   <button className={`flex gap-3 text-base font-normal leading-snug text-[#3b3c4a] border border-[#bdbdbd] rounded-full w-[fit-content] px-5 py-3`}>Envio um email <img src={asset(`/carbon_send.svg`)} width={20}/></button>
              </div>
-             <div className={`flex flex-col gap-6 lg:order-3 lg:flex-col lg:items-left lg:ml-5`}>
+             <div className={`flex gap-6 lg:order-3 lg:flex-col lg:items-left lg:ml-5`}>
                 <p className={`text-xl font-semibold leading-snug`}>Links</p>
                 {
                     itemsSocial?.map(item=>{
