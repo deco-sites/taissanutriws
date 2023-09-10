@@ -2,6 +2,7 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import MobileHeader from "../islands/MobileHeader.tsx";
 
+
 export interface MenuItem{
     title: string,
     href: string,
@@ -14,7 +15,7 @@ interface Props{
     headerImage?: LiveImage;
     burgerMenuImage: LiveImage;
     menuItems?: MenuItem[]
-
+ 
 }
 
 export default function Header(props: Props){
