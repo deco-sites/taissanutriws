@@ -19,9 +19,6 @@ export default function Slider(props: Props){
     const [index,setIndex] = useState<number>(0)
 
     const moveImages = (arg: number)=>{
-        
-        if((index + arg) < 0){setIndex(images.length-1); return;}
-        if((index + arg) > images.length-1){setIndex(0); return;}
         setIndex(index + arg);
     }
 
@@ -29,9 +26,13 @@ export default function Slider(props: Props){
         <section className={`p-4 lg:px-20`}>
             <div className={`flex justify-between items-center`}>
                 <p className={`text-[#3B3C4A] text-[40px] font-bold leading-[60px]`}>{title}</p>
-                <div className={`flex gap-2`}>
-                    <div className={`cursor-pointer`} onClick={()=>{moveImages(-1)}}><img src={asset("/LeftArrow.svg")} width={32}/></div>
-                    <div className={`cursor-pointer`} onClick={()=>{moveImages(1)}}><img src={asset("/RightArrow.svg")} width={32}/></div>
+                <div className={`hidden lg:flex gap-2`}>
+                    <div className={`cursor-pointer`} onClick={()=>{index == 0 ? `` : moveImages(-1)}}><img src={index == 0 ? asset("/RightArrow.svg") : asset("/ActiveArrow.png")} width={32} height={32} className={`rotate-180`}/></div>
+                    <div className={`cursor-pointer`} onClick={()=>{index + 2 >= images.length -1 ? `` : moveImages(1)}}><img src={index + 2 >= images.length -1 ? asset("/RightArrow.svg") : asset("/ActiveArrow.png")} width={32} height={32}/></div>
+                </div>
+                <div className={`flex lg:hidden  gap-2`}>
+                    <div className={`cursor-pointer`} onClick={()=>{index == 0 ? `` : moveImages(-1)}}><img src={index == 0 ? asset("/RightArrow.svg") : asset("/ActiveArrow.png")} width={32} height={32}className={`rotate-180`}/></div>
+                    <div className={`cursor-pointer`} onClick={()=>{index + 2 == images.length ? `` : moveImages(1)}}><img src={index + 2 == images.length ? asset("/RightArrow.svg") : asset("/ActiveArrow.png")} width={32} height={32}/></div>
                 </div>
             </div>
             <div className={`grid grid-cols-1 lg:grid-cols-3 gap-8`}>
