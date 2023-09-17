@@ -32,39 +32,38 @@ export default function Feedback(props: Props){
             }else {rtn.push(false)}
         }
 
-        console.log({name: "Log do feedback", array: rtn})
         return rtn
     }
 
     return(
-        <section className={`px-4 flex flex-col lg:flex-row gap-10 mb-20`}>
+        <section className={`p-4 lg:px-20 flex flex-col lg:flex-row gap-10 mb-20 lg:justify-center`}>
             <div>
-                <Image src={mainImage} width={330} height={330} />
+                <Image src={mainImage} width={330} height={330} className={`lg:h-[537px] lg:w-[507px]`} />
             </div>
-            <div className={`flex flex-col gap-10`}>
-                <p className={`text-[#3B3C4A] text-5xl font-bold leading-[45px]`}>
+            <div className={`flex flex-col gap-10 lg:p-28 lg:max-w-4xl`}>
+                <p className={`text-[#3B3C4A] text-5xl font-bold leading-[45px] lg:leading-[50px]`}>
                     {title}
                 </p>
                 <div className={`max-w-[75%] flex flex-col gap-4`}>
-                    <p className={`text-base text-[#3B3C4A] leading-7`}>
-                        "{testimony}""
+                    <p className={`text-base text-[#3B3C4A] leading-7 lg:text-2xl lg:leading-10 lg:max-w-[80%] lg:mb-8`}>
+                        "{testimony}"
                     </p>
                     <div className={`flex flex-row gap-2`}>
-                        <Image src={clientImage} width={40} height={40} className={`rounded-full`} />
+                        <Image src={clientImage} width={40} height={40} className={`rounded-full lg:h-16 lg:w-16`} />
                         <div>
-                            <p className={`text-[#3B3C4A] text-xs font-medium font-['PlayfairDisplay']`}>
+                            <p className={`text-[#3B3C4A] text-xs font-medium font-['PlayfairDisplay'] lg:text-xl`}>
                                 {clientName}
                             </p>
-                            <p className={`text-[#97989F] text-[10px] font-medium`}>
+                            <p className={`text-[#97989F] text-[10px] font-medium lg:text-base`}>
                                 {clientDescription}
                             </p>
                             <div className={`flex gap-1 items-center`}>
                                 {calcStars().map(item=>{
                                     return(
-                                        item ? <Image height={15} width={15} src={fullStarImage} /> : <Image height={15} width={15} src={emptyStarImage} />
+                                        item ? <Image height={15} width={15} src={fullStarImage} className={`lg:w-[24px] lg:h-[24px]`} /> : <Image height={15} width={15} src={emptyStarImage} className={`lg:w-[24px] lg:h-[24px]`} />
                                     )
                                 })}
-                                <p className={`text-[9.33px] leading-[13.93px] `}>{clientRate}</p>
+                                <p className={`text-[9.33px] leading-[13.93px] lg:text-[15px]`}>{clientRate}</p>
                             </div>
                         </div>
                     </div>
