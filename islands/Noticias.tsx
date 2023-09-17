@@ -19,7 +19,7 @@ export default function Noticias(props: Props){
     const {title, cards} = props;
     const [showMore, setMore] = useState<boolean>(false)
     return(
-        <section className={`p-4 mt-28 lg:px-20`}>
+        <section className={`p-4 lg:px-20`}>
              <h1 className={`text-[#181A2A] text-[40px] font-bold leading-[45px] mb-8`}>{title}</h1>
              <div className={`grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4`}>
                 {

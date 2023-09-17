@@ -20,7 +20,7 @@ interface Props{
 export default function AreaDeAtuacao(props:Props){
     const {title, image, imageAlt, cards, mainText} = props;
     return(
-        <section className={`mt-[150px] px-4 lg:px-20`}>
+        <section className={`px-4 lg:px-20`}>
              <h1 className={`font-[inter] font-bold text-[40px] text-center lg:text-left lg:text-6xl lg:mb-8`}>{title}</h1>
              <Image src={image} width={250} alt={imageAlt} className={`w-full rounded-3xl mb-6`}/>
              <p className={`text-[#3B3C4A] text-base mb-12 lg:text-2xl leading-10`}>{mainText}</p>
