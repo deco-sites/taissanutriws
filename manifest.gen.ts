@@ -9,14 +9,15 @@ import * as $$$$$$3 from "./sections/Header.tsx";
 import * as $$$$$$4 from "./sections/NewsletterSection.tsx";
 import * as $$$$$$5 from "./sections/NoticiasSection.tsx";
 import * as $$$$$$6 from "./sections/PessoasDeVerdade.tsx";
-import * as $$$$$$7 from "./sections/PostHeader.tsx";
-import * as $$$$$$8 from "./sections/PostImage.tsx";
-import * as $$$$$$9 from "./sections/PostSubtitle.tsx";
-import * as $$$$$$10 from "./sections/PostText.tsx";
-import * as $$$$$$11 from "./sections/PostVideo.tsx";
-import * as $$$$$$12 from "./sections/SliderSection.tsx";
-import * as $$$$$$13 from "./sections/SobreMim.tsx";
-import * as $$$$$$14 from "./sections/WhatsApp.tsx";
+import * as $$$$$$7 from "./sections/PostBigTag.tsx";
+import * as $$$$$$8 from "./sections/PostHeader.tsx";
+import * as $$$$$$9 from "./sections/PostImage.tsx";
+import * as $$$$$$10 from "./sections/PostSubtitle.tsx";
+import * as $$$$$$11 from "./sections/PostText.tsx";
+import * as $$$$$$12 from "./sections/PostVideo.tsx";
+import * as $$$$$$13 from "./sections/SliderSection.tsx";
+import * as $$$$$$14 from "./sections/SobreMim.tsx";
+import * as $$$$$$15 from "./sections/WhatsApp.tsx";
 import * as $$$$$$$$$$$0 from "./apps/site.ts";
 
 const manifest = {
@@ -28,14 +29,15 @@ const manifest = {
     "deco-sites/taissanutriws/sections/NewsletterSection.tsx": $$$$$$4,
     "deco-sites/taissanutriws/sections/NoticiasSection.tsx": $$$$$$5,
     "deco-sites/taissanutriws/sections/PessoasDeVerdade.tsx": $$$$$$6,
-    "deco-sites/taissanutriws/sections/PostHeader.tsx": $$$$$$7,
-    "deco-sites/taissanutriws/sections/PostImage.tsx": $$$$$$8,
-    "deco-sites/taissanutriws/sections/PostSubtitle.tsx": $$$$$$9,
-    "deco-sites/taissanutriws/sections/PostText.tsx": $$$$$$10,
-    "deco-sites/taissanutriws/sections/PostVideo.tsx": $$$$$$11,
-    "deco-sites/taissanutriws/sections/SliderSection.tsx": $$$$$$12,
-    "deco-sites/taissanutriws/sections/SobreMim.tsx": $$$$$$13,
-    "deco-sites/taissanutriws/sections/WhatsApp.tsx": $$$$$$14,
+    "deco-sites/taissanutriws/sections/PostBigTag.tsx": $$$$$$7,
+    "deco-sites/taissanutriws/sections/PostHeader.tsx": $$$$$$8,
+    "deco-sites/taissanutriws/sections/PostImage.tsx": $$$$$$9,
+    "deco-sites/taissanutriws/sections/PostSubtitle.tsx": $$$$$$10,
+    "deco-sites/taissanutriws/sections/PostText.tsx": $$$$$$11,
+    "deco-sites/taissanutriws/sections/PostVideo.tsx": $$$$$$12,
+    "deco-sites/taissanutriws/sections/SliderSection.tsx": $$$$$$13,
+    "deco-sites/taissanutriws/sections/SobreMim.tsx": $$$$$$14,
+    "deco-sites/taissanutriws/sections/WhatsApp.tsx": $$$$$$15,
   },
   "apps": {
     "deco-sites/taissanutriws/apps/site.ts": $$$$$$$$$$$0,
