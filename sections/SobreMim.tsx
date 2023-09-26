@@ -11,7 +11,7 @@ interface Props{
 export default function SobreMim(props: Props){
     const {image, title, text, linkKnowMore} = props;
     return(
-        <section className={`px-6 py-20 lg:flex lg:px-20 gap-28`}>
+        <section className={`px-6 py-20 lg:flex lg:px-20 gap-28 lg:mb-52`}>
             <div className={`lg:w-[50%]`}>
                 <Image src={image} width={600}  className={`w-[90%] lg:w-[100%]`}/>
             </div>

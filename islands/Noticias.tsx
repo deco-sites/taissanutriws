@@ -28,7 +28,7 @@ export default function Noticias(props: Props){
                         if(showMore) return item;
                     }).map(item=>{
                         return(
-                            <a className={`border-[#E8E8EA] border-1 rounded-2xl`} href={item.href}>
+                            <a className={`border-[#E8E8EA] border-1 rounded-2xl lg:mb-20`} href={item.href}>
                                 <Image src={item.image} width={400} className={`w-full rounded-t-2xl`} />
                                 <div className={`p-4 flex flex-col gap-3`}>
                                     <p className={`text-[#EC926A] bg-[#F7E3DA] font-bold py-1 px-2 rounded-xl w-[fit-content]`}>{item.tag}</p>
@@ -40,7 +40,7 @@ export default function Noticias(props: Props){
                     })
                 }
              </div>
-             <div className={`flex w-full justify-center items-center mt-8`}>
+             <div className={`flex w-full justify-center items-center mt-8 lg:mt-32`}>
                 <div onClick={()=>{setMore(true)}} className={`${showMore || cards.length <= 14 ? `hidden` : ``} cursor-pointer w-52 h-14 flex items-center justify-center bg-[#F7E3DA] rounded-full font-bold`}>Saiba mais</div>
              </div>
         </section>

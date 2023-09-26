@@ -8,7 +8,7 @@ export interface Props{
 export default function (props: Props){
     const {image} = props;
     return(
-        <section className={`p-4 mb-36`}>
+        <section className={`p-4 mb-36 lg:mb-52`}>
             <div className={`lg:max-w-4xl lg:w-4xl lg:m-auto lg:flex lg:flex-col lg:justify-center lg:items-center`}>
                 <Image src={image || ""} width={400} className={`mb-[-60px] z-30 lg:w-[800px] lg:mb-[-150px]`}/>
                 <form className={`p-4 pt-12 pb-12 bg-[#FFD7C9] rounded-2xl z-10 lg:w-full lg:px-12`}>

@@ -23,7 +23,7 @@ export default function Header(props: Props){
 
     return(
         <header className={`w-full`}>
-           <div className={`fixed top-0 left-0 w-[100%] flex justify-between p-6 shadow-xl bg-white lg:px-20 py-9 z-[60]`}>
+           <div className={`fixed top-0 left-0 w-[100%] flex justify-between p-6 shadow-xl bg-white lg:px-20 py-9 z-[1002]`}>
             <div>
                     <Image src={headerImage || ""} width={255} height={45} />
                 </div>
