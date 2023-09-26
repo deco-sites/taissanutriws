@@ -21,7 +21,7 @@ export default function (props: Props){
                         <p className={`mb-4`}>e receba conteúdo atualizado!</p>
                     </div>
                     <div className={`bg-[#f9f9f9] w-full p-4 rounded-full flex mb-4 lg:p-2 lg:pl-14`}>
-                        <input type="text" className={`w-[80%] m-auto bg-[#f9f9f9] font-medium text-base text-[#97989f]`} placeholder={`Insira o seu endereço de email`} />
+                        <input type="text" className={`active:border-none active:outline-none outline-none w-[80%] m-auto bg-[#f9f9f9] font-medium text-base text-[#97989f]`} placeholder={`Insira o seu endereço de email`} />
                         <button className={`hidden bg-[#3B3C4A] w-[153px] h-[55px] justify-center items-center rounded-[50px] text-white text-base font-bold lg:flex`}>Enviar</button>
                     </div>
                     <button className={`bg-[#3B3C4A] w-[153px] h-[55px] flex justify-center items-center rounded-[50px] text-white text-base font-bold mb-4 lg:hidden`}>Enviar</button>
