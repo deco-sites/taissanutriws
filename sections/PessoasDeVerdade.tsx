@@ -42,7 +42,7 @@ export default function PessoasDeVerdade(props: Props){
     }
 
     return(
-        <section className={`pl-4 lg:max-w-7xl lg:mx-auto lg:mb-44`}>
+        <section className={`pl-4 lg:max-w-7xl lg:mx-auto lg:mb-44 lg:p-0`}>
             <div>
                 <div className={`hidden lg:flex lg:ml-5 px-6 py-4 bg-[#F2D1C2] rounded-full w-[fit-content] justify-center items-center`}>
                     <p className={`h-[fit-content] w-[fit-content]`}>{mainTag}</p>
