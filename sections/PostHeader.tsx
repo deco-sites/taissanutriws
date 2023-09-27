@@ -12,7 +12,7 @@ interface Props{
 export default function PostHeader(props: Props){
     const {tag, title, authorImage, authorName, date} = props;
     return(
-        <section className={`flex flex-col gap-4 p-4 lg:px-20`}>
+        <section className={`flex flex-col gap-4 p-4 lg:p-0 lg:max-w-7xl lg:mx-auto lg:mb-14`}>
             <p className={`text-[#EC926A] bg-[#F7E3DA] font-bold py-1 px-2 rounded-xl w-[fit-content]`}>{tag}</p>
             <p className={`text-[40px] font-bold leading-[44px]`}>{title}</p>
             <div className={`flex gap-8`}>

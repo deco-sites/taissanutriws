@@ -36,7 +36,7 @@ export default function Feedback(props: Props){
     }
 
     return(
-        <section className={`p-4 lg:px-20 flex flex-col lg:flex-row gap-10 mb-20 lg:mb-52 lg:justify-center`}>
+        <section className={`p-4 lg:p-0 lg:max-w-7xl lg:mx-auto flex flex-col lg:flex-row gap-10 mb-20 lg:mb-52 lg:justify-center`}>
             <div>
                 <Image src={mainImage} width={330} height={330} className={`lg:h-[537px] lg:w-[507px]`} />
             </div>

@@ -23,9 +23,9 @@ export default function Slider(props: Props){
     }
 
     return(
-        <section className={`p-4 lg:px-20 lg:mb-52`}>
-            <div className={`flex justify-between items-center`}>
-                <p className={`text-[#3B3C4A] text-[40px] font-bold leading-[60px] lg:mb-16`}>{title}</p>
+        <section className={`p-4 lg:max-w-7xl lg:mx-auto lg:p-0 lg:mb-52`}>
+            <div className={`flex justify-between items-center lg:mb-16`}>
+                <p className={`text-[#3B3C4A] text-[40px] font-bold leading-[60px] `}>{title}</p>
                 <div className={`hidden lg:flex gap-2`}>
                     <div className={`cursor-pointer`} onClick={()=>{index == 0 ? `` : moveImages(-1)}}><img src={index == 0 ? asset("/RightArrow.svg") : asset("/ActiveArrow.png")} width={32} height={32} className={`rotate-180`}/></div>
                     <div className={`cursor-pointer`} onClick={()=>{index + 2 >= images.length -1 ? `` : moveImages(1)}}><img src={index + 2 >= images.length -1 ? asset("/RightArrow.svg") : asset("/ActiveArrow.png")} width={32} height={32}/></div>

@@ -19,7 +19,7 @@ export default function Noticias(props: Props){
     const {title, cards} = props;
     const [showMore, setMore] = useState<boolean>(false)
     return(
-        <section className={`p-4 lg:px-20`}>
+        <section className={`p-4 lg:p-0 lg:max-w-7xl lg:mx-auto`}>
              <h1 className={`text-[#181A2A] text-[40px] font-bold leading-[45px] mb-8`}>{title}</h1>
              <div className={`grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4`}>
                 {
@@ -40,7 +40,7 @@ export default function Noticias(props: Props){
                     })
                 }
              </div>
-             <div className={`flex w-full justify-center items-center mt-8 lg:mt-32`}>
+             <div className={`flex w-full justify-center items-center mt-8 lg:mt-32 lg:mb-24`}>
                 <div onClick={()=>{setMore(true)}} className={`${showMore || cards.length <= 14 ? `hidden` : ``} cursor-pointer w-52 h-14 flex items-center justify-center bg-[#F7E3DA] rounded-full font-bold`}>Saiba mais</div>
              </div>
         </section>

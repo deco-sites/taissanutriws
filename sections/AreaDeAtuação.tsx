@@ -21,7 +21,7 @@ interface Props{
 export default function AreaDeAtuacao(props:Props){
     const {title, image, imageAlt, cards, mainText} = props;
     return(
-        <section className={`px-4 lg:px-20`}>
+        <section className={`px-4 lg:max-w-7xl lg:mx-auto lg:px-0`}>
              <h1 className={`font-[inter] font-bold text-[40px] text-center lg:text-left lg:text-6xl lg:mb-16`}>{title}</h1>
              <Image src={image} width={250} alt={imageAlt} className={`w-full rounded-3xl mb-6 lg:mb-16`}/>
              <p>{<QuillText className={`text-base mb-12 lg:text-2xl leading-10 lg:leading-[51px] font-['Inter'] text-[#3B3C4A] `} html={mainText} />}</p>
