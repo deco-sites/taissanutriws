@@ -35,7 +35,7 @@ export default function HeaderIsland(props: Props){
                     {menuItems?.map(item=>{
                         console.log(item.href == window.location?.pathname)
                         return(
-                            <a href={item.href} className={`text-sm font-medium leading-snug ${window.location?.pathname.includes(item.href) ? `text-[#EB926A]` : `text-zinc-700`}`}>{item.title}</a>
+                            <a href={item.href} className={`text-sm font-medium leading-snug ${window.location?.pathname.match(item.href) ? `text-[#EB926A]` : `text-zinc-700`}`}>{item.title}</a>
                         )
                     })}
                     
