@@ -33,9 +33,8 @@ export default function HeaderIsland(props: Props){
                 </div>
                 <div className={`hidden lg:flex flex-row gap-14 items-center`}>
                     {menuItems?.map(item=>{
-                        console.log(window.location?.pathname.match(item.href))
                         return(
-                            <a href={item.href} className={`text-sm font-medium leading-snug ${window.location?.pathname.match(item.href) ? `text-[#EB926A]` : `text-zinc-700`}`}>{item.title}</a>
+                            <a href={item.href} className={`text-sm font-medium leading-snug ${window.location?.pathname?.match(item.href) ? `text-[#EB926A]` : `text-zinc-700`}`}>{item.title}</a>
                         )
                     })}
                     
