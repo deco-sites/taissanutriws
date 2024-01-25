@@ -2,25 +2,26 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./routes/_app.tsx";
-import * as $$0 from "./islands/HeaderIsland.tsx";
-import * as $$1 from "./islands/MobileHeader.tsx";
-import * as $$2 from "./islands/Newsletter.tsx";
-import * as $$3 from "./islands/Noticias.tsx";
-import * as $$4 from "./islands/Slider.tsx";
+import * as $_app from "./routes/_app.tsx";
+import * as $HeaderIsland from "./islands/HeaderIsland.tsx";
+import * as $MobileHeader from "./islands/MobileHeader.tsx";
+import * as $Newsletter from "./islands/Newsletter.tsx";
+import * as $Noticias from "./islands/Noticias.tsx";
+import * as $Slider from "./islands/Slider.tsx";
+import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/_app.tsx": $0,
+    "./routes/_app.tsx": $_app,
   },
   islands: {
-    "./islands/HeaderIsland.tsx": $$0,
-    "./islands/MobileHeader.tsx": $$1,
-    "./islands/Newsletter.tsx": $$2,
-    "./islands/Noticias.tsx": $$3,
-    "./islands/Slider.tsx": $$4,
+    "./islands/HeaderIsland.tsx": $HeaderIsland,
+    "./islands/MobileHeader.tsx": $MobileHeader,
+    "./islands/Newsletter.tsx": $Newsletter,
+    "./islands/Noticias.tsx": $Noticias,
+    "./islands/Slider.tsx": $Slider,
   },
   baseUrl: import.meta.url,
-};
+} satisfies Manifest;
 
 export default manifest;
